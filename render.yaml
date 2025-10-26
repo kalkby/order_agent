@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: order-agent
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: ./start.sh
+    envVars:
+      - key: COURIER_API_URL
+        value: https://my-courier-mock.free.beeceptor.com
+      - key: COURIER_API_KEY
+        value: ""
+      - key: API_SECRET
+        value: super-secret-123
