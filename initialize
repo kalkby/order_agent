@@ -1,0 +1,10 @@
+# 1. Initialize git
+git init
+git add .
+git commit -m "initial cloud-ready FastAPI order agent"
+
+# 2. Create a repo on GitHub (manually via github.com) named `order-agent` (or whatever).
+#    Then set the remote (replace URL with your repo's)
+git remote add origin https://github.com/kalkby/order_agent.git
+git branch -M main
+git push -u origin main
